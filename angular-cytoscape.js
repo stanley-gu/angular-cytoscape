@@ -1,6 +1,4 @@
-'use strict';
-
-angular.module('stanleygu.cytoscapeweb')
+angular.module('stanleygu.cytoscapeweb', [])
 .directive('cytoscape', function() {
   return {
     template: '<div></div>',
