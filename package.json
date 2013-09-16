@@ -1,0 +1,22 @@
+{
+  "name": "angular-cytoscape",
+  "version": "0.0.1",
+  "description": "An Angular Directive for the Cytoscape Web Plugin",
+  "main": "angular-cytoscape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stanley-gu/angular-cytoscape.git"
+  },
+  "keywords": [
+    "angular",
+    "directive",
+    "cytoscape"
+  ],
+  "author": "Stanley Gu",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "f57c7cb0934129876f74b595956a4f54834daf69"
+}

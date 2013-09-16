@@ -1,0 +1,26 @@
+{
+  "name": "angular-cytoscape",
+  "version": "0.0.1",
+  "homepage": "https://github.com/stanley-gu/angular-cytoscape",
+  "authors": [
+    "Stanley Gu <stanleygu@gmail.com>"
+  ],
+  "description": "An Angular Directive for the Cytoscape Web Plugin",
+  "main": "angular-cytoscape.js",
+  "keywords": [
+    "angular",
+    "cytoscape",
+    "directive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.0.8"
+  }
+}
