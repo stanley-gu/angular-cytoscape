@@ -1,6 +1,6 @@
 {
   "name": "angular-cytoscape",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An Angular Directive for the Cytoscape Web Plugin",
   "main": "angular-cytoscape.js",
   "scripts": {
