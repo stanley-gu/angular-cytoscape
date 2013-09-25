@@ -130,8 +130,8 @@ angular.module('stanleygu.cytoscapeweb', [])
       };
 
       var options = {
-        swfPath: "components/cytoscape_web/swf/CytoscapeWeb",
-        flashInstallerPath: "components/cytoscape_web/swf/playerProductInstall"
+        swfPath: "bower_components/cytoscape_web/swf/CytoscapeWeb",
+        flashInstallerPath: "bower_components/cytoscape_web/swf/playerProductInstall"
       };
 
       scope.$watch('graph', function(newVal, oldVal) {
