@@ -9,7 +9,13 @@ angular.module('stanleygu.cytoscapeweb', [])
     },
     link: function postLink(scope, element, attrs) {
 
-      var id = attrs.id;
+      var id;
+      if (attrs.id) {
+        id = attrs.id;
+      } else {
+        id = parseInt(Math.random() * 1e10, 10);
+        element[0].setAttribute('id', id);
+      }
 
       var shapeMapper = {
         attrName: "node set",
