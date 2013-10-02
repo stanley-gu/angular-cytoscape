@@ -17,6 +17,18 @@ angular.module('stanleygu.cytoscapeweb', [])
         element[0].setAttribute('id', id);
       }
 
+      // setting the visibility of panZoomControlVisible if present in directive
+      var panZoomControlVisible;
+      if (attrs.panzoomcontrolvisible) {
+        if(attrs.panzoomcontrolvisible.match(/false/i)) {
+          panZoomControlVisible = false;
+        } else {
+          panZoomControlVisible = true;
+        }
+      } else {
+        panZoomControlVisible = true;
+      }
+
       var shapeMapper = {
         attrName: "node set",
         entries: [{
@@ -152,6 +164,7 @@ angular.module('stanleygu.cytoscapeweb', [])
             edgeLabelsVisible: true,
             layout: "ForceDirected",
             visualStyle: visual_style,
+            panZoomControlVisible: panZoomControlVisible
           };
 
           var diffFlash = new org.cytoscapeweb.Visualization(id, options);
@@ -164,6 +177,7 @@ angular.module('stanleygu.cytoscapeweb', [])
             edgeLabelsVisible: true,
             layout: "ForceDirected",
             visualStyle: visual_style,
+            panZoomControlVisible: panZoomControlVisible
           };
 
           var treeFlash = new org.cytoscapeweb.Visualization("graphtreeflash", options);
@@ -176,6 +190,7 @@ angular.module('stanleygu.cytoscapeweb', [])
             edgeLabelsVisible: true,
             layout: "ForceDirected",
             visualStyle: visual_style,
+            panZoomControlVisible: panZoomControlVisible
           };
 
           var treeFlash = new org.cytoscapeweb.Visualization("graphmodelvizflash", options);
